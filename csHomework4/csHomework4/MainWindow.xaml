@@ -1,0 +1,16 @@
+﻿<Window x:Class="csHomework4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:csHomework4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel x:Name="uxZipCode">
+        <TextBlock Width="200" Height="30" Margin="10" HorizontalAlignment="Center" TextAlignment="Center">Enter Zip or Postal Code</TextBlock>
+        <TextBox x:Name="uxZip" Width="200" TextChanged="UxZip_TextChanged"></TextBox>
+        <TextBlock Width="500" Height="20" Margin="10" TextAlignment="Center">Enter US Zip Code as: ##### or #####-####</TextBlock>
+        <TextBlock Width="500" Height="20" Margin="10" TextAlignment="Center">Enter a Canadian Postal Code as: A#B#C# or a#b#c#</TextBlock>
+        <Button x:Name="uxSubmit"  Width="100" Margin="20" IsEnabled="False">Submit</Button>
+    </StackPanel>
+</Window>
